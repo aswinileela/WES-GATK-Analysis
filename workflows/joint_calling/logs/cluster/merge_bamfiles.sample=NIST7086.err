@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+
+[Wed Nov 17 22:08:25 2021]
+rule merge_bamfiles:
+    input: /fs03/pg32/zarul/WES_analysis/results/preprocessing/read_alignment/NIST7086/.DONE
+    output: /fs03/pg32/zarul/WES_analysis/results/preprocessing/merge_bamfiles/NIST7086.bam
+    log: /fs03/pg32/zarul/WES_analysis/results/preprocessing/log/merge_bamfiles/NIST7086.log
+    jobid: 0
+    wildcards: sample=NIST7086
+    threads: 16
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Activating conda environment: /projects/pg32/WES_analyses/workflows/joint_calling/.snakemake/conda/409aa2be3945fcb4e384eff8b34680bf
+[Wed Nov 17 22:10:09 2021]
+Finished job 0.
+1 of 1 steps (100%) done

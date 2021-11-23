@@ -1,0 +1,17 @@
+__default__:
+        etc : ""
+        jobname : "{rule}.{wildcards}"
+        output : "logs/cluster/{rule}.{wildcards}.out"
+        error : "logs/cluster/{rule}.{wildcards}.err"
+concatenate_fastq:
+        etc: "--mem=100G"
+build_index:
+        etc: "--mem=150G --time=3-00:00:00"
+gatk_variant_recalibrator_indel:
+        etc: "--mem=50G"
+gatk_variant_recalibrator_snp:
+        etc: "--mem=50G"
+gatk_haplotypecaller:
+        etc: "--mem=50G"
+cnnscorevariants:
+        etc: "--mem=50G"

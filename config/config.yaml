@@ -1,0 +1,39 @@
+swap_path:
+    /fs03/pg32/zarul
+preprocessing_path:
+    /fs03/pg32/zarul/WES_analysis/results/preprocessing
+out_path:
+    single:
+        /fs03/pg32/zarul/WES_analysis/single_calling/results
+    joint:
+        /fs03/pg32/zarul/WES_analysis/joint_calling/results
+metadata:
+    /projects/pg32/WES_analyses/input_folder/metadata.tsv
+fastq_dir_path:
+    /projects/pg32/WES_analyses/input_folder/datasets/raw_data
+reference_genome_url:
+    http://s3.amazonaws.com/nanopore-human-wgs/rna/referenceFastaFiles/dna/GRCh38_full_analysis_set_plus_decoy_hla.fa
+gatk_bundle_url:
+    ftp://gsapubftp-anonymous@ftp.broadinstitute.org/bundle/hg38
+dbsnp_ref:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/dbsnp_138.hg38.vcf.gz 
+exon_bed:
+    /projects/pg32/WES_analyses/input_folder/exome_regions/szemei.bed
+exon_bed_nochrX:
+    /projects/pg32/WES_analyses/input_folder/exome_regions/finalv1.bed
+hapmap_resource:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/hapmap_3.3.hg38.vcf.gz
+mills_resource:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+axiompoly_resource:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/Axiom_Exome_Plus.genotypes.all_populations.poly.hg38.vcf.gz
+dbsnp_resource:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/Homo_sapiens_assembly38.dbsnp.vcf.gz
+omni_resource:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/1000G_omni2.5.hg38.vcf.gz
+1000G_resource:
+    /projects/pg32/WES_analyses/input_folder/gatk_bundle_db/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+funcotator_resource:
+    /fs03/pg32/db/funcotator_db/funcotator_dataSources.v1.6.20190124g
+NA12878_validation_vcf:
+    /projects/pg32/WES_analyses/input_folder/validation/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz

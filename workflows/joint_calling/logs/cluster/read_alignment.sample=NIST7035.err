@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+
+[Wed Nov 17 21:20:04 2021]
+rule read_alignment:
+    input: /projects/pg32/WES_analyses/input_folder/datasets/raw_data/NIST7035, /fs03/pg32/zarul/WES_analysis/results/preprocessing/GRCh38_full_analysis_set_plus_decoy_hla.fa, /fs03/pg32/zarul/WES_analysis/results/preprocessing/bwa_index
+    output: /fs03/pg32/zarul/WES_analysis/results/preprocessing/read_alignment/NIST7035/.DONE
+    log: /fs03/pg32/zarul/WES_analysis/results/preprocessing/log/read_alignment/NIST7035.log
+    jobid: 0
+    wildcards: sample=NIST7035
+    threads: 4
+    resources: mem_mb=6225, disk_mb=6225, tmpdir=/tmp
+
+Activating conda environment: /projects/pg32/WES_analyses/workflows/joint_calling/.snakemake/conda/409aa2be3945fcb4e384eff8b34680bf
+Touching output file /fs03/pg32/zarul/WES_analysis/results/preprocessing/read_alignment/NIST7035/.DONE.
+[Wed Nov 17 22:03:53 2021]
+Finished job 0.
+1 of 1 steps (100%) done

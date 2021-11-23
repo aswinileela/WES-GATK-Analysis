@@ -1,0 +1,11 @@
+name: gatk
+channels:
+        - bioconda
+        - conda-forge
+        - defaults
+dependencies:
+        - gatk4=4.2.2.0
+        - openjdk
+        - r-base=4.1.1
+        - r-ggplot2
+        - r-gsalib

@@ -1,0 +1,6 @@
+name: snpsift 
+channels:
+    - bioconda
+    - conda-forge
+dependencies:
+    - snpsift

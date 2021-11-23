@@ -1,0 +1,27 @@
+import glob
+import pandas as pd
+
+configfile: "../../config/config.yaml"
+
+pre_path = config["preprocessing_path"]
+out_path = config["out_path"]["joint"]
+
+metadata = pd.read_csv(config["metadata"], sep = "\t", index_col = 0)
+samples = metadata.index.tolist()
+groups = metadata["group"].unique().tolist()
+groups = ["NA12878"]
+
+include: "rules/downloads.smk"
+include: "rules/bwa.smk"
+include: "rules/preprocessing.smk"
+include: "rules/gatk_joint_calling.smk"
+include: "rules/validate.smk"
+
+rule all:
+    input:
+        expand(rules.gatk_concordance_NA12878.output, group = groups),
+        expand(rules.summarize_concordance_output_to_bed.output, group = groups),
+        expand(rules.snpsift_concordance_NA12878.output.summary, group = groups)
+
+def get_samples_given_group(group):
+    return metadata.loc[metadata["group"] == group, :].index.tolist()
