@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Leela
+    given-names: Aswini
+    affiliation: "School of Science, Monash University Malaysia"
+    email: aswini.leela@monash.edu
+title: "WES-GATK-Analysis"
+abstract: "Snakemake workflow for whole-exome sequencing analysis using GATK4: single-sample and joint variant calling with validation against NA12878."
+version: "1.0.0"
+date-released: "2023-01-01"
+url: "https://github.com/aswinileela/WES-GATK-Analysis"
+license: MIT
+keywords:
+  - bioinformatics
+  - genomics
+  - pipeline
