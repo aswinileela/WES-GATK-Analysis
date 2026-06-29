@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this pipeline, please cite it using the metadata below."
 type: software
 authors:
-  - family-names: Leela
-    given-names: Aswini
+  - family-names: Loganathan
+    given-names: A.L
     affiliation: "School of Science, Monash University Malaysia"
     email: aswini.leela@monash.edu
 title: "WES-GATK-Analysis"
